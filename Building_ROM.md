@@ -9,8 +9,8 @@ You will need to set up some directories in your build environment.
 
 * To create them run:
 
-    mkdir -p ~/bin  
-    mkdir -p ~/px
+		mkdir -p ~/bin
+		mkdir -p ~/px
 
 ## Downloading repo
 

@@ -15,12 +15,11 @@ Windows: Use Git PowerShell, [Download](https://windows.github.com/)
 * go to gerrithub settings → ssh public keys
 * click on add key
 * copy the content of ~/.shh/id_rsa.pub to the box in gerrit settings
-
 	
-        (#)sudo apt-get install python-pip
-	(#)sudo pip install git-review
-	(#)git config --global review.review.gerrithub.io.username "gerrit username"
-	(#)git config --global review.review.gerrithub.io.email "email you registered with"
+        	(#)sudo apt-get install python-pip
+		(#)sudo pip install git-review
+		(#)git config --global review.review.gerrithub.io.username "gerrit username"
+		(#)git config --global review.review.gerrithub.io.email "email you registered with"
 
 ##Cloning
 
@@ -38,23 +37,23 @@ Windows: Use Git PowerShell, [Download](https://windows.github.com/)
 	cd REPONAME
 * make your changes
 
-	git add -A  //to add all changed files to your next commit
-	git commit -s
+		git add -A  //to add all changed files to your next commit
+		git commit -s
 
 ### Linux:
 * (#)a nano will pop up where you can enter the commit message, first line is the title, the rest will be the change description
 
-	(#)cntr+o
-	(#)cntr+x
+		(#)cntr+o
+		(#)cntr+x
 
 ### Windows:
 * *a text editor will pop up where you can enter the commit message, first line is the title, the rest will be the change description
 * *save the file
 * *close the text editor
 
-* push the change  
+* push the change
 
-	git push origin HEAD:refs/for/BRANCHNAME
+		git push origin HEAD:refs/for/BRANCHNAME
 
 ## Uploading a Patchset
 
@@ -63,9 +62,9 @@ If you want to change something in your already uploaded commit, but dont want t
 * your local repo must be at the commit you want to patch (if it isnt, git reset --hard you cherry pick the commit from gerrit)
 * change the files you want
 
-	git add -A   
-	git commit --amend  
-	git push origin HEAD:refs/for/BRANCHNAME  
+		git add -A
+		git commit --amend
+		git push origin HEAD:refs/for/BRANCHNAME
 
 ## Other useful commands
 

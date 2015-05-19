@@ -11,15 +11,15 @@ If you want to get your files out of the VM you might want to set up a shared fo
 * Add folder in host
 * Add folder in VM
 * Add folder in Linux
-* Insert Guest additions  
+* Insert Guest additions 
 
-	sudo apt-get install dkms
-	cd /media/USERNAME/
-	ls
-	cd VBOXADDITIONS_X.X.X_XXXXX
-	ls
-	sudo sh VBoxLinuxAdditions.run
-* reboot  
+		sudo apt-get install dkms
+		cd /media/USERNAME/
+		ls
+		cd VBOXADDITIONS_X.X.X_XXXXX
+		ls
+		sudo sh VBoxLinuxAdditions.run
+* reboot
 
 		sudo nano /etc/rc.local
 
@@ -91,6 +91,7 @@ These packages and commands are needed in order to build ProjectX and SaberMod t
 
 * open .bashrc
 * add these lines to the end
+
 		# Android tools
 		export PATH=${PATH}:/home/**USER**/android/SDK/tools
 		export PATH=${PATH}:/home/**USER**/android/SDK/platform-tools
