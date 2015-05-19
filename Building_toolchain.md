@@ -12,38 +12,38 @@ Or you can download prebuilt toolchains from [here](http://sabermod.net)
 
 * Create the Directories
 
-	mkdir -p ~/sm-tc && cd ~/sm-tc;
+		mkdir -p ~/sm-tc && cd ~/sm-tc;
 
 * Sync the repo
 
-	repo init -u https://gitlab.com/SaberMod/sabermod-manifest.git -b master
-	repo sync
+		repo init -u https://gitlab.com/SaberMod/sabermod-manifest.git -b master
+		repo sync
 
 * Building toolchains
 
-	cd ~/sm-tc/smbuild/
+		cd ~/sm-tc/smbuild/
 
 * View all available arch directories and build all arch scripts.
 
-	ls
+		ls
 
 * So for example:
 
-	cd arm
+		cd arm
 
 * or stay in current directory to use the all script
 
 * So for example:
 
-	bash all-arm
+		bash all-arm
 
 * To execute a build using a script
 
-	bash "**insert name of script**"
+		bash "insert name of script"
 
 * So for example
 
-	bash arm-eabi-4.9
+		bash arm-eabi-4.9
 
 ### Checking for updates
 

@@ -11,7 +11,7 @@ If you want to get your files out of the VM you might want to set up a shared fo
 * Add folder in host
 * Add folder in VM
 * Add folder in Linux
-* Insert Guest additions
+* Insert Guest additions  
 
 	sudo apt-get install dkms
 	cd /media/USERNAME/
@@ -19,14 +19,15 @@ If you want to get your files out of the VM you might want to set up a shared fo
 	cd VBOXADDITIONS_X.X.X_XXXXX
 	ls
 	sudo sh VBoxLinuxAdditions.run
-* reboot
+* reboot  
 
-	sudo nano /etc/rc.local
+		sudo nano /etc/rc.local
+
 * remove first #
 * enter this after the blue text
 
-	mount -t vboxsf -o rw,uid=1000,gid=1000 NAME IN VM /home/USERNAME/ORDNERNAME
-	STRG + X
+		mount -t vboxsf -o rw,uid=1000,gid=1000 NAME IN VM /home/USERNAME/ORDNERNAME
+		STRG + X
 * reboot
 
 ## Install packages
@@ -90,12 +91,12 @@ These packages and commands are needed in order to build ProjectX and SaberMod t
 
 * open .bashrc
 * add these lines to the end
-	# Android tools
-	export PATH=${PATH}:/home/**USER**/android/SDK/tools
-	export PATH=${PATH}:/home/**USER**/android/SDK/platform-tools
-	export PATH=${PATH}:/home/**USER**/android/android-studio/bin
-	export PATH=${PATH}:~/android/bin
-	PATH=/home/**USER**/.bin:$PATH 
+		# Android tools
+		export PATH=${PATH}:/home/**USER**/android/SDK/tools
+		export PATH=${PATH}:/home/**USER**/android/SDK/platform-tools
+		export PATH=${PATH}:/home/**USER**/android/android-studio/bin
+		export PATH=${PATH}:~/android/bin
+		PATH=/home/**USER**/.bin:$PATH 
 * save
 
 ## Setup git
