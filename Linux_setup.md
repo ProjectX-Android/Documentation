@@ -26,7 +26,7 @@ If you want to get your files out of the VM you might want to set up a shared fo
 * remove first #
 * enter this after the blue text
 
-		mount -t vboxsf -o rw,uid=1000,gid=1000 NAME IN VM /home/USERNAME/ORDNERNAME
+		mount -t vboxsf -o rw,uid=1000,gid=1000 NAME IN VM /home/USERNAME/FOLDERNAME
 		STRG + X
 * reboot
 
@@ -54,7 +54,8 @@ These packages and commands are needed in order to build ProjectX and SaberMod t
 
 * Download: https://gitlab.com/SaberMod/sabermod-prebuilts/repository/archive.zip
 * unzip
-	sudo cp -R sabermod-prebuilts/cloog/lib/* -f /usr/lib/x86_64-linux-gnu
+
+		sudo cp -R sabermod-prebuilts/cloog/lib/* -f /usr/lib/x86_64-linux-gnu
 
 ### Link header files for multilib
 
@@ -93,17 +94,17 @@ These packages and commands are needed in order to build ProjectX and SaberMod t
 * add these lines to the end
 
 		# Android tools
-		export PATH=${PATH}:/home/**USER**/android/SDK/tools
-		export PATH=${PATH}:/home/**USER**/android/SDK/platform-tools
-		export PATH=${PATH}:/home/**USER**/android/android-studio/bin
+		export PATH=${PATH}:/home/USER/android/SDK/tools
+		export PATH=${PATH}:/home/USER/android/SDK/platform-tools
+		export PATH=${PATH}:/home/USER/android/android-studio/bin
 		export PATH=${PATH}:~/android/bin
-		PATH=/home/**USER**/.bin:$PATH 
+		PATH=/home/USER/.bin:$PATH 
 * save
 
 ## Setup git
 
-	git config --global user.name "**Your Name Here**"
-	git config --global user.email "**your_email@example.com**"
+	git config --global user.name "Your Name Here"
+	git config --global user.email "your_email@example.com"
 	git config --global credential.helper cache
 	git config --global credential.helper 'cache --timeout=3600'
 

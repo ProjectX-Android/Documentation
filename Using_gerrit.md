@@ -11,19 +11,19 @@ Windows: Use Git PowerShell, [Download](https://windows.github.com/)
 **Lines marked with * are for Windows users only**
 
 	cd ~/.ssh
-	ssh-keygen -t rsa -C "**your-email@domain.com**"
+	ssh-keygen -t rsa -C "your-email@domain.com"
 * go to gerrithub settings → ssh public keys
 * click on add key
 * copy the content of ~/.shh/id_rsa.pub to the box in gerrit settings
-	
-        	(#)sudo apt-get install python-pip
+
+		(#)sudo apt-get install python-pip
 		(#)sudo pip install git-review
 		(#)git config --global review.review.gerrithub.io.username "gerrit username"
 		(#)git config --global review.review.gerrithub.io.email "email you registered with"
 
 ##Cloning
 
-	git clone ssh://USERNAME@review.gerrithub.io:29418/ProjectX-Android/**REPONAME** && scp -p -P 29418 USERNAME@review.gerrithub.io:hooks/commit-msg REPONAME/.git/hooks/
+	git clone ssh://USERNAME@review.gerrithub.io:29418/ProjectX-Android/REPONAME && scp -p -P 29418 USERNAME@review.gerrithub.io:hooks/commit-msg REPONAME/.git/hooks/
 
 ## **IMPORTANT**
 
@@ -74,7 +74,7 @@ If you want to change something in your already uploaded commit, but dont want t
 
 * to change the author of the latest commit in order to keep correct authorship
 
-		git commit --amend --author="**Author Name** <**email@address.com**>" 
+		git commit --amend --author="Author Name <email@address.com>" 
 
 * adds a specific branch of a project as a remote which you can fetch 
 
