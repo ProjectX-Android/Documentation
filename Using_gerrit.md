@@ -83,3 +83,7 @@ If you want to change something in your already uploaded commit, but dont want t
 * to compare your local copy with the remote repo
 
 		git diff REMOTE/BRANCH
+
+* merge commits from a remote (only recommended if the repo is not heavily modified and there are a lot of new commits)
+
+		git merge REMOTE/BRANCH
