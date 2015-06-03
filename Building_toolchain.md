@@ -10,6 +10,8 @@ Or you can download prebuilt toolchains from [here](http://sabermod.net)
 
 ## Building
 
+Can be done via our build.sh script (./build.sh -t) or manually:
+
 * Create the Directories
 
 		mkdir -p ~/sm-tc && cd ~/sm-tc;
